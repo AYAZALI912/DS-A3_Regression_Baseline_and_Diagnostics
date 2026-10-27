@@ -1,0 +1,27 @@
+{
+  "dataset_file": "omni_01_av(1).txt",
+  "source_in_repo_expected": "data/omni_01_av.txt (copy the supplied frozen dataset here)",
+  "raw_rows": 23376,
+  "raw_columns": 55,
+  "valid_rows_after_cleaning": 19019,
+  "train_rows": 13313,
+  "validation_rows": 2853,
+  "test_rows": 2853,
+  "features": [
+    "proton_density",
+    "imf_magnitude",
+    "bz_gsm",
+    "flow_pressure"
+  ],
+  "target": "solar_wind_speed",
+  "split": "chronological 70% train / 15% validation / 15% test",
+  "selected_model_by_validation_RMSE": "Linear regression",
+  "test_metrics": {
+    "model": "Linear regression",
+    "split": "test",
+    "n": 2853,
+    "MAE": 65.45330107903987,
+    "RMSE": 78.81184442399356,
+    "R2": 0.24355259260010276
+  }
+}
